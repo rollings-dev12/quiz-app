@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-box">
+        <div class="quiz-contanier">
+            <div class="quiz-header">
+                <h1>Quiz Challenge</h1>
+                <p>Test your knowledge against the clock!</p>
+            </div>
+            <div class="quiz-content">
+                <div class=" screen welcome-screen active">
+                    <h2>Welcome to the Quiz!</h2>
+                    <p>You will have <strong>15 seconds</strong> to answer each question.</p>
+                    <p>If you don't answer in time, the correct answer will be selected automatically.</p>
+                    <p>Your highest score will be saved and displayed at the end.</p>
+                    <button id="start-btn" class="btn start-btn">Start Quiz</button>
+                </div>
+                <div class="quiz-screen screen">
+                    <div id="timer">
+                        <span id="timer-text"></span>
+                        <p>hurry up with the correct answer</p>
+                    </div>
+                    <div class="progress-wrapper">
+                        <div class="progress-container">
+                            <div id="progress-bar"></div>
+                        </div>
+                        <div id="question-number">0 / 0</div>
+                    </div>
+                    <div id="question"></div>
+                    <div id="options" class="options"></div>
+                    <button id="next-btn">Next Question</button>
+                </div>
+                <div id="result" class="result screen">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
